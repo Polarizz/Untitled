@@ -127,7 +127,7 @@ main {
 .note-card .card-header input{
     border: none;
     outline: none;
-    width: 70%;
+    width: 100%;
     font-weight: 400;
     font-size: 2em;
     color: #404040;
@@ -138,6 +138,7 @@ main {
 }
 
 .note-card .button {
+    display: none;
     background-color: #404040;
     padding: 10px 23px;
     border-radius: 30px;
