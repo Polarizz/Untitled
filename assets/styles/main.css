@@ -180,6 +180,10 @@ main {
         width: 25vw;
     }
 
+    .add-card:hover {
+        opacity: 1;
+    }
+
     .add-card:active {
         opacity: 1;
     }
