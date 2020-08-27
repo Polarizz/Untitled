@@ -1,0 +1,164 @@
+p,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 7em;
+    line-height: 0.8;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 4em;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 2.5em;
+}
+
+h4 {
+    font-weight: 500;
+    font-size: 1em;
+}
+
+p {
+    font-weight: 400;
+    font-size: 2em;
+}
+
+a {
+    font-weight: 500;
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+    justify-content: center;
+    margin: 50px;
+    background-color: #f7f7f7;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+header .title {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+header .title h1 {
+    margin-right: 35px;
+    color: #404040;
+}
+
+header .title p {
+    opacity: 20%;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.add-card {
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+    background-color: #404040;
+    border-radius: 30px;
+    width: 375px;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    transition: all 0.5s cubic-bezier(.19,1,.22,1);
+}
+
+.add-card:hover {
+    opacity: 0.75;
+}
+
+.add-card:active {
+    transform: scale(0.95);
+    opacity: 1;
+}
+
+.add-card img {
+    user-select: none;
+    width: 30%;
+}
+
+.note-card {
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+    background-color: white;
+    border-radius: 30px;
+    width: 375px;
+    height: 600px;
+    margin-bottom: 50px;
+}
+
+.note-card .card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.note-card .card-header input{
+    border: none;
+    outline: none;
+    width: 70%;
+    font-weight: 400;
+    font-size: 2em;
+    color: #404040;
+}
+
+.note-card .card-header input::placeholder {
+    opacity: 0.2;
+}
+
+.note-card .button {
+    background-color: #404040;
+    padding: 10px 23px;
+    border-radius: 30px;
+    color: #f7f7f7;
+    border: none;
+    outline: none;
+}
+
+.note-card h4 {
+    text-transform: uppercase;
+}
+
+.note-card .card-body textarea {
+    border: none;
+    outline: none;
+    resize: none;
+    font-weight: 400;
+    font-size: 2em;
+    width: 95%;
+    color: #404040;
+}
+
+.note-card .card-body textarea::placeholder {
+    opacity: 0.2;
+}

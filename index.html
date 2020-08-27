@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.css" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="/assets/styles/main.css">
+    <link rel="stylesheet" href="/assets/styles/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="/assets/scripts/main.js"></script>
+
+    <title>Untitled</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <h1>Untitled</h1>
+            <p>A new method of taking notes</p> 
+        </div>
+    </header>
+
+    <main>
+        <div class="add-card" id="button">
+            <img src="/assets/images/plus.png">
+        </div>
+
+        <div class="note-card" id="card">
+            <div class="card-header">
+                <input placeholder="Title" id="name">
+                <button class="button" onclick="saveTextAsFile()">
+                    <h4>save</h4>
+                </button>  
+            </div>
+            <span class="card-body">
+                <textarea rows="14" placeholder="Enter text here" id="content"></textarea>
+            </span>
+        </div>
+
+        
+    </main>
+</body>
+
+</html>
