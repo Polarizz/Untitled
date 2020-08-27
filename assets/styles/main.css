@@ -41,6 +41,7 @@ a {
 body {
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
     justify-content: center;
+    align-items: center;
     margin: 50px;
     background-color: #f7f7f7;
     height: 100%;
@@ -161,4 +162,71 @@ main {
 
 .note-card .card-body textarea::placeholder {
     opacity: 0.2;
+}
+
+@media only screen and (max-width: 790px) {
+    header .title {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .title h1 {
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    body {
+        margin: 20px;
+    }
+
+    header {
+        margin-bottom: 5vw;
+        justify-content: center;
+    }
+
+    header .title {
+        margin: 20px;
+    }
+
+    header .title h1 {
+        font-size: 18vw;
+        margin-bottom: 5vw;
+        margin-right: 0;
+    }
+
+    header .title p {
+        font-size: 5vw;
+    }
+
+    .add-card {
+        height: 70vw;
+        min-height: 70vw;
+    }
+
+    .note-card {
+        height: 80vw;
+        min-height: 80vw;
+        width: 70vw;
+        padding: 7vw;
+    }
+
+    .note-card .button {
+        padding: 3vw 5vw;
+        font-size: 3vw;
+    }
+
+    .note-card .card-header {
+        margin-bottom: 5vw;
+    }
+
+    .note-card .card-header input{
+        font-size: 6vw;
+    }
+
+    .note-card .card-body textarea {
+        height: 65vw;
+        width: 65vw;
+        font-size: 6vw;
+    }
 }
