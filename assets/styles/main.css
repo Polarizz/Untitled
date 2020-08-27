@@ -174,6 +174,15 @@ main {
     header .title h1 {
         margin-bottom: 25px;
     }
+
+    .add-card img {
+        user-select: none;
+        width: 25vw;
+    }
+
+    .add-card:active {
+        opacity: 1;
+    }
 }
 
 @media only screen and (max-width: 550px) {
@@ -209,7 +218,7 @@ main {
         height: 80vw;
         min-height: 80vw;
         width: 70vw;
-        padding: 7vw;
+        padding: 5vw;
     }
 
     .note-card .button {
